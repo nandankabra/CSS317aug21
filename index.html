@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .c1{
+                width: 200px;
+                height: 200px;
+                background: tomato;
+                display: block;
+                margin: 100px auto;
+                animation-name: p1;
+                animation-duration: 2s;
+                animation-timing-function: ease-in;
+                animation-iteration-count: 1;      
+            }
+            @keyframes p1{
+                0%{
+                    transform: rotateZ(0deg);
+                }
+                100%{
+                    transform: rotateZ(360deg);
+                }
+            }
+
+            .c2{
+                width: 200px;
+                height: 200px;
+                background: royalblue;
+                display: block;
+                margin: 100px auto;
+                animation-name: p2;
+                animation-duration: 2s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: 1;
+            }
+            @keyframes p2{
+                0%{
+                    transform: rotateZ(0deg);
+                }
+                100%{
+                    transform: rotateZ(360deg);
+                }
+
+            }
+            .c3{
+                width: 200px;
+                height: 200px;
+                background: sandybrown;
+                animation-name:p3;
+                animation-duration: 2s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+            @keyframes p3{
+                0%{
+                    transform: translateX(0px)
+                }
+                25%{
+                    background: green;
+                }
+                50%{
+                    background: red;  
+                }
+                75%{
+                    background: black;
+                }
+                100%{
+                    transform: translateX(900px)
+                }
+            }
+            .c4{
+                width: 200px;
+                height: 200px;
+                background: seagreen;
+                animation-name: p4;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-duration: 2s;
+                margin-top: 50px;
+            }
+            @keyframes p4{
+                0%{
+                    transform: translateX(0px);
+                }
+                25%{
+                    background: lightcoral;
+                }
+                50%{
+                    background: lightgrey;
+                }
+                75%{
+                    background: lightskyblue;
+                }
+                100%{
+                    background: lime;
+                    transform: translateX(900px);
+                }
+            }
+           #a1{
+               font-size: 3em;
+               height: 75px;
+               width: 200px;
+               background: mediumslateblue;
+               text-decoration: none;
+           }
+
+        </style>
+    </head>
+    <body> 
+        <div class="  c1"> </div>
+        <div class="  c2"> </div>
+        <div class="  c3">  </div>
+        <div class="  c4">   </div>
+        <div class="  c5">   </div>
+        <a href="./1.html" id="a1"> Click Here To Go Nextpage</a>
+    </body>
+</html>
